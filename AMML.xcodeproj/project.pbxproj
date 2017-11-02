@@ -312,6 +312,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.AMML;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -325,6 +326,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.AMML;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -347,6 +349,7 @@
 				26BD2E281FABA0F900A49014 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Mp0-fK-GEl">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,18 +19,24 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7d8-zE-Vq4">
-                                <rect key="frame" x="16" y="281.5" width="343" height="40"/>
+                                <rect key="frame" x="20" y="316" width="374" height="40"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="isv-cm-ng1"/>
+                                    <constraint firstAttribute="height" constant="40" id="isv-cm-ng1">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                                    </constraint>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Close">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                </variation>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -62,30 +68,47 @@
                         <viewControllerLayoutGuide type="bottom" id="apa-Q3-nsn"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ffO-hW-buf">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="082-s4-vxG">
-                                <rect key="frame" x="16" y="30" width="343" height="30"/>
+                                <rect key="frame" x="20" y="36.333333333333329" width="374" height="29.999999999999986"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="7Rd-2o-XJD">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                    </constraint>
+                                </constraints>
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                </variation>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WWX-K1-X8V">
-                                <rect key="frame" x="16" y="68" width="343" height="40"/>
+                                <rect key="frame" x="20" y="74.333333333333329" width="374" height="40"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="fyC-wq-eNx"/>
+                                    <constraint firstAttribute="height" constant="40" id="fyC-wq-eNx">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                                    </constraint>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="SAVE">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                </variation>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time to upload location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lRK-jQ-4Fg">
-                                <rect key="frame" x="16" y="8" width="335" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time to upload location (seconds)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lRK-jQ-4Fg">
+                                <rect key="frame" x="20" y="7.9999999999999982" width="366" height="20.333333333333329"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -95,8 +118,8 @@
                             <constraint firstItem="lRK-jQ-4Fg" firstAttribute="leading" secondItem="ffO-hW-buf" secondAttribute="leadingMargin" id="cNx-Gg-sI8"/>
                             <constraint firstAttribute="trailingMargin" secondItem="lRK-jQ-4Fg" secondAttribute="trailing" constant="8" id="i2Z-eg-jlg"/>
                             <constraint firstItem="WWX-K1-X8V" firstAttribute="top" secondItem="082-s4-vxG" secondAttribute="bottom" constant="8" id="kMe-0v-Nfe"/>
-                            <constraint firstItem="082-s4-vxG" firstAttribute="top" secondItem="xbw-q5-mcL" secondAttribute="bottom" constant="30" id="kar-GI-IIc"/>
                             <constraint firstItem="lRK-jQ-4Fg" firstAttribute="top" secondItem="xbw-q5-mcL" secondAttribute="bottom" constant="8" id="lDO-GK-4x2"/>
+                            <constraint firstItem="082-s4-vxG" firstAttribute="top" secondItem="lRK-jQ-4Fg" secondAttribute="bottom" constant="8" id="oW5-pf-OqF"/>
                             <constraint firstItem="082-s4-vxG" firstAttribute="trailing" secondItem="ffO-hW-buf" secondAttribute="trailingMargin" id="qfs-ym-HAm"/>
                             <constraint firstItem="WWX-K1-X8V" firstAttribute="trailing" secondItem="ffO-hW-buf" secondAttribute="trailingMargin" id="rxz-wg-pC1"/>
                         </constraints>
@@ -111,7 +134,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Mp0-fK-GEl" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="43c-o0-iw5">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="43c-o0-iw5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
